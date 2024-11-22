@@ -34,9 +34,11 @@ export default function Cart() {
         </div>
       
       {cartItems.length === 0 ? (
-        <div className='text-white text-center py-20'>
-          <p className='mb-5'>Your cart is empty</p>
-          <Link href="/catalog" className='text-[#e3fc02]'>Continue Shopping</Link>
+        <div className='text-center py-20'>
+          <h2 className='text-white text-2xl font-medium mb-5'>Your cart is empty</h2>
+          <Link href='/catalog' className='text-[#e3fc02] hover:underline'>
+            Let&apos;s find something for you
+          </Link>
         </div>
       ) : (
         <>

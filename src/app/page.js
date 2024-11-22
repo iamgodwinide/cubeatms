@@ -86,7 +86,7 @@ const homepage = () => {
         <div>
           <h1 className='text-white text-3xl md:text-4xl font-bold mb-4'>Administrative Backend</h1>
           <p className='text-white text-xs mb-2 leading-5'>
-          As an operator, you`&apos;ll have full, exclusive control over your machine through our decentralized backend. Easily adjust commissions or set fixed fees, modify compliance limits in real-time, publish your machine`&apos;s location on CoinATMRadar, and choose between running a full-node cryptocurrency wallet or using a hosted option.
+            As an operator, you&apos;ll have full, exclusive control over your machine through our decentralized backend. Easily adjust commissions or set fixed fees, modify compliance limits in real-time, publish your machine&apos;s location on CoinATMRadar, and choose between running a full-node cryptocurrency wallet or using a hosted option.
           </p>
         </div>
         <Image
@@ -110,7 +110,7 @@ const homepage = () => {
         <div>
           <h1 className='text-white text-3xl md:text-4xl font-bold mb-4'>Customize ATM</h1>
           <p className='text-white text-xs mb-2 leading-5'>
-          Purchase 10 or more Cube ATMs and get them customized with your company's logo and colors for enhanced brand visibility.
+            Purchase 10 or more Cube ATMs and get them customized with your company&apos;s logo and colors for enhanced brand visibility.
           </p>
         </div>
       </div>
