@@ -12,13 +12,6 @@ import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 
 
-/**
- * Renders the homepage component which includes various sections such as
- * introduction, multi-currency support, administrative backend, ATM customization,
- * technical specifications, and purchasing options. It also includes an "Add to cart"
- * functionality, a video section with play functionality, and contact and subscribe
- * components.
- */
 const homepage = () => {
   const { addItem, updateQuantity } = useCart()
   const [quantity, setQuantity] = useState(1)
@@ -48,7 +41,7 @@ const homepage = () => {
         <div>
           <h1 className='text-white text-3xl md:text-5xl font-bold mb-4'>FREEDOM TO ESCAPE</h1>
           <p className='text-white text-xs mb-2 leading-5'>
-            Cube ATM is on a mission to bring Bitcoin to the developing world by offering an affordable, royalty-free solution for converting fiat currency into Bitcoin. We’re revolutionizing financial access, one transaction at a time, by providing the most cost-effective Bitcoin ATMs on the market.
+            Cube ATM is on a mission to bring Bitcoin to the developing world by offering an affordable, royalty-free solution for converting fiat currency into Bitcoin. We&apos;re revolutionizing financial access, one transaction at a time, by providing the most cost-effective Bitcoin ATMs on the market.
           </p>
           <p className='text-white text-xs mb-2 leading-5'>
             For detailed setup instructions and software demos, subscribe to our Cube ATM <Link className='text-[#e3fc02] underline' href="https://cubeatms.substack.com/">Substack</Link>. To see our ATMs in action, visit our <Link className='text-[#e3fc02] underline' href="https://youtube.com/playlist?list=PLEh1TuNoHd_iSrFFLmjxrC3Q8l1ULmeeF&si=klcNEELyGR8J25uE">Youtube</Link> channel or join our <Link className='text-[#e3fc02] underline' href="https://t.me/BitcoinCapitalist">Telegram</Link> group. All other links can be found <Link className='text-[#e3fc02] underline' href="https://linktr.ee/bitcoincapitalist">here</Link>.
@@ -93,7 +86,7 @@ const homepage = () => {
         <div>
           <h1 className='text-white text-3xl md:text-4xl font-bold mb-4'>Administrative Backend</h1>
           <p className='text-white text-xs mb-2 leading-5'>
-          As an operator, you’ll have full, exclusive control over your machine through our decentralized backend. Easily adjust commissions or set fixed fees, modify compliance limits in real-time, publish your machine's location on CoinATMRadar, and choose between running a full-node cryptocurrency wallet or using a hosted option.
+          As an operator, you`&apos;ll have full, exclusive control over your machine through our decentralized backend. Easily adjust commissions or set fixed fees, modify compliance limits in real-time, publish your machine`&apos;s location on CoinATMRadar, and choose between running a full-node cryptocurrency wallet or using a hosted option.
           </p>
         </div>
         <Image

@@ -17,7 +17,7 @@ const Checkout = () => {
     address: '',
     apartment: '',
     city: '',
-    country: 'United States',
+    country: '',
     state: '',
     zipCode: '',
     phone: '',
@@ -26,13 +26,56 @@ const Checkout = () => {
     billingAddress: '',
     billingApartment: '',
     billingCity: '',
-    billingCountry: 'United States',
+    billingCountry: '',
     billingState: '',
     billingZipCode: '',
   })
 
   const [selectedPayment, setSelectedPayment] = useState('')
   const [activeAccordion, setActiveAccordion] = useState('')
+
+  const countries = [
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "Australia",
+    "Germany",
+    "France",
+    "Spain",
+    "Italy",
+    "Netherlands",
+    "Belgium",
+    "Switzerland",
+    "Austria",
+    "Sweden",
+    "Norway",
+    "Denmark",
+    "Finland",
+    "Ireland",
+    "New Zealand",
+    "Japan",
+    "South Korea",
+    "Singapore",
+    "Hong Kong",
+    "United Arab Emirates",
+    "Saudi Arabia",
+    "Brazil",
+    "Mexico",
+    "Argentina",
+    "Chile",
+    "South Africa",
+    "Israel",
+    "Poland",
+    "Czech Republic",
+    "Hungary",
+    "Greece",
+    "Portugal",
+    "Romania",
+    "Bulgaria",
+    "Croatia",
+    "Slovakia",
+    "Slovenia"
+  ].sort()
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target
@@ -254,8 +297,10 @@ const Checkout = () => {
                         className="checkout-input"
                         required
                       >
-                        <option value="United States">United States</option>
-                        <option value="Canada">Canada</option>
+                        <option value="">Select a country</option>
+                        {countries.map(country => (
+                          <option key={country} value={country}>{country}</option>
+                        ))}
                       </select>
                     </div>
                     <div>
@@ -471,8 +516,10 @@ const Checkout = () => {
                         className="checkout-input"
                         required
                       >
-                        <option value="United States">United States</option>
-                        <option value="Canada">Canada</option>
+                        <option value="">Select a country</option>
+                        {countries.map(country => (
+                          <option key={country} value={country}>{country}</option>
+                        ))}
                       </select>
                     </div>
                     <div>
