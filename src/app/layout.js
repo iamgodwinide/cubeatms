@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
+import { Figtree } from 'next/font/google'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -12,6 +13,12 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const FigtreeFont = Figtree({
+  subsets: ['latin'],
+  variable: '--font-figtree',
+  weight: ['400', '500', '600', '700']
+})
 
 export const metadata = {
   title: "Cube ATMs"
@@ -25,7 +32,7 @@ export default function RootLayout({ children }) {
       <Script noModule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></Script>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${FigtreeFont.className} ${geistSans.variable} ${geistMono.variable } antialiased`}
       >
         {children}
       </body>
