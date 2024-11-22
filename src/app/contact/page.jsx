@@ -1,4 +1,4 @@
-import Contact from '@/components/Contact/Contact'
+import ContactForm from '@/components/Contact/Contact'
 import Link from 'next/link'
 import React from 'react'
 import Announcement from "@/components/Annoucement/Announcement";
@@ -22,7 +22,7 @@ const Contact = () => {
             Email: Travis@BitcoinCapitalist.io
         </p>
 
-        <Contact/>
+        <ContactForm/>
         <Footer/>
     </div>
     </>
