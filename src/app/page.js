@@ -12,7 +12,7 @@ import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 
 
-const homepage = () => {
+const Homepage = () => {
   const { addItem, updateQuantity } = useCart()
   const [quantity, setQuantity] = useState(1)
   const [isLoading, setIsLoading] = useState(false)
@@ -236,4 +236,4 @@ const homepage = () => {
   )
 }
 
-export default homepage
+export default Homepage
