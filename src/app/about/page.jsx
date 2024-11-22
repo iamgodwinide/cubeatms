@@ -44,8 +44,10 @@ const About = () => {
         <Subscribe/>
     </div>
     <Footer/>
+
+    
     </>
   )
 }
 
-export default <ABout></ABout>
+export default About
