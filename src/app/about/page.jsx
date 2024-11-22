@@ -6,7 +6,7 @@ import Announcement from "@/components/Annoucement/Announcement";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 
-const about = () => {
+const About = () => {
   return (
     <>
     <Announcement/>
@@ -48,4 +48,4 @@ const about = () => {
   )
 }
 
-export default about
+export default <ABout></ABout>

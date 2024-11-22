@@ -10,7 +10,7 @@ import Navbar from "@/components/Navbar/Navbar";
 
 
 
-const page = () => {
+const Page = () => {
   const [sortOption, setSortOption] = useState('featured');
 
   const sortedProducts = [...products].sort((a, b) => {
@@ -82,4 +82,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 
 
-const contact = () => {
+const Contact = () => {
   return (
     <>
          <Announcement/>
@@ -30,4 +30,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact
