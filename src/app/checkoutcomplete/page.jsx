@@ -1,11 +1,11 @@
 "use client"
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Suspense } from 'react'
 import Image from 'next/image'
 import { useSearchParams } from 'next/navigation'
 import useCart from '@/store/useCart'
 
-const CheckoutComplete = () => {
+const OrderDetails = () => {
   const searchParams = useSearchParams()
   const [orderData, setOrderData] = useState(null)
   const orderNumber = Math.floor(100000 + Math.random() * 900000)
@@ -24,7 +24,7 @@ const CheckoutComplete = () => {
   }, [searchParams])
 
   if (!orderData) {
-    return <div className="min-h-screen bg-gray-50 flex items-center justify-center">Loading...</div>
+    return <div className="min-h-screen bg-gray-50 flex items-center justify-center">Loading order details...</div>
   }
 
   const { customer, shipping, billing, payment, order } = orderData
@@ -67,7 +67,7 @@ const CheckoutComplete = () => {
               {/* Order Status */}
               <div className="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-6">
                 <p className="text-sm text-blue-800">
-                  We'll email you an order confirmation with details and tracking info.
+                  We will email you an order confirmation with details and tracking info.
                 </p>
               </div>
 
@@ -188,6 +188,21 @@ const CheckoutComplete = () => {
         </div>
       </div>
     </div>
+  )
+}
+
+const CheckoutComplete = () => {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading order details...</p>
+        </div>
+      </div>
+    }>
+      <OrderDetails />
+    </Suspense>
   )
 }
 
