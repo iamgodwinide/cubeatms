@@ -71,19 +71,19 @@ const Footer = () => {
       <div className='container'>
         <div className='flex justify-center items-center p-2'>
           <div className='flex gap-4 items-center justify-center text-lg text-white my-20'>
-            <Link href="/">
+            <Link href="https://www.facebook.com/profile.php?id=100090132821837">
               <ion-icon name="logo-facebook"></ion-icon>
             </Link>
-            <Link href="/">
+            <Link href="https://www.instagram.com/cubeatms/">
               <ion-icon name="logo-instagram"></ion-icon>
             </Link>
-            <Link href="/">
+            <Link href="https://youtube.com/playlist?list=PLEh1TuNoHd_iSrFFLmjxrC3Q8l1ULmeeF&si=mwQHFT6PRF-4-eM_">
               <ion-icon name="logo-youtube"></ion-icon>
             </Link>
-            <Link href="/">
+            <Link href="https://x.com/BTCCapitalist21">
               <ion-icon name="logo-pinterest"></ion-icon>
             </Link>
-            <Link href="/">
+            <Link href="https://www.snapchat.com/add/btccapitalist?sender_web_id=6df09959-9df4-45e9-b816-16e6df08ce29&device_type=desktop&is_copy_url=true">
               <ion-icon name="logo-snapchat"></ion-icon>
             </Link>
           </div>

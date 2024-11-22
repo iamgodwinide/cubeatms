@@ -35,6 +35,7 @@ export default function RootLayout({ children }) {
         className={`${FigtreeFont.className} ${geistSans.variable} ${geistMono.variable } antialiased`}
       >
         {children}
+        <Script src="//code.jivosite.com/widget/9eQhtzTJPt" async></Script>
       </body>
     </html>
   );
