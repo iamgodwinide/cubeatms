@@ -1,0 +1,48 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-72 {
+  height: 72px;
+}
+
+@media (max-width: 768px) {
+  .w-60 {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+}
