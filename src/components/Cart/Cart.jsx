@@ -71,7 +71,7 @@ const Cart = () => {
                 <span>Subtotal</span>
                 <span>${getTotal().toFixed(2)}</span>
               </div>
-              <Link href={"/cart"} className="w-full block px-3 text-center bg-[#e3fc02] text-black py-3 font-medium hover:opacity-90">
+              <Link onClick={() => setCartOpen(false)} href={"/cart"} className="w-full block px-3 text-center bg-[#e3fc02] text-black py-3 font-medium hover:opacity-90">
                 Checkout
               </Link>
             </div>
