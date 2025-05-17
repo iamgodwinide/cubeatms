@@ -124,8 +124,8 @@ const Checkout = () => {
       payment: {
         method: selectedPayment,
         address: selectedPayment === 'bitcoin' 
-          ? '1GFiaAtFqH1X7WggRdvktAmttFXLddtts1'
-          : 'TQe5xUGyntkDyQdFgV7dCPV2t5hAn5BDyz'
+          ? 'bc1q66sjj4v54jhlmv3qyhlfngj2yuejujtweylp0z'
+          : 'TW3YbuGbwFrPKniqm1wBzGxSBjXiJorgn2'
       },
       order: {
         subtotal,
@@ -403,7 +403,7 @@ const Checkout = () => {
                       Send the exact amount of BTC to the following address:
                     </p>
                     <div className="bg-gray-100 p-4 rounded-lg mb-4">
-                      <code className="text-sm">1GFiaAtFqH1X7WggRdvktAmttFXLddtts1</code>
+                      <code className="text-sm">bc1q66sjj4v54jhlmv3qyhlfngj2yuejujtweylp0z</code>
                     </div>
                   </div>
                 )}
@@ -434,7 +434,7 @@ const Checkout = () => {
                       Send USDT (ERC20) to the following address:
                     </p>
                     <div className="bg-gray-100 p-4 rounded-lg mb-4">
-                      <code className="text-sm">TQe5xUGyntkDyQdFgV7dCPV2t5hAn5BDyz</code>
+                      <code className="text-sm">TW3YbuGbwFrPKniqm1wBzGxSBjXiJorgn2</code>
                     </div>
                   </div>
                 )}
